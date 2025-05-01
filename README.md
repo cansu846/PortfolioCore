@@ -24,12 +24,6 @@ This project is designed to <b>showcase my software development skills</b> and p
 
 ---
 
-## 📸 Screenshots
-
-<p><em>Screenshots of the UI will be added here.</em></p>
-
----
-
 ## 🛠️ Features
 
 - ✅ Sections for personal info, education, experience, and skills  
@@ -45,6 +39,9 @@ This project is designed to <b>showcase my software development skills</b> and p
    ```bash
    git clone https://github.com/your-username/cv-project.git
 
+---
+
+## 📸 Screenshots
 
 ![Screenshot 2025-05-01 230245](https://github.com/user-attachments/assets/a66f9b21-3845-4c97-ad7c-c19f8b764c3d)
 ![Screenshot 2025-05-01 230319](https://github.com/user-attachments/assets/3ec3a01e-3f2e-4fe2-bb0c-b7aae1a9c820)
