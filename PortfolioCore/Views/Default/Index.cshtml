@@ -1,0 +1,64 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+@await Component.InvokeAsync("_DefaultHeadComponentPartial")
+
+<body class="index-page">
+    @await Component.InvokeAsync("_DefaultMenuComponentPartial")
+
+    <main class="main">
+
+        @await Component.InvokeAsync("_DefaultFeatureComponentPartial")
+        @await Component.InvokeAsync("_DefaultAboutComponentPartial")
+
+        @await Component.InvokeAsync("_DefaultStatCompenentPartial")
+
+        @await Component.InvokeAsync("_DefaultSkillComponentPartial")
+        <!-- Resume Section -->
+        <section id="resume" class="resume section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Resume</h2>
+            </div><!-- End Section Title -->
+
+            <div class="container">
+
+                <div class="row">
+
+                    @await Component.InvokeAsync("_DefaultResumeComponentPartial")
+
+                    @await Component.InvokeAsync("_DefaultExperienceComponentPartial")
+
+                </div>
+
+            </div>
+
+        </section><!-- /Resume Section -->
+        @await Component.InvokeAsync("_DefaultPortfolioComponentPartial")
+
+@*         @await Component.InvokeAsync("_DefaultServiceComponentPartial")
+ *@
+        @await Component.InvokeAsync("_DefaultTestimonialComponentPartial")
+
+        @await Component.InvokeAsync("_DefaultContactMessageComponentPartial")
+    </main>
+
+    @await Component.InvokeAsync("_DefaultFooterComponentPartial")
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    @await Component.InvokeAsync("_DefaultScriptComponentPartial")
+    @await Component.InvokeAsync("_DefaultMapComponentPartial")
+
+</body>
+
+</html>

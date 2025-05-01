@@ -1,0 +1,64 @@
+﻿@using PortfolioCore.Entities
+@model List<Message>
+@{
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<h1>Messages</h1>
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Name Surname</th>
+        <th>Email</th>
+        <th>Subject</th>
+        <th>Content</th>
+        <th>Date</th>
+        <th>Status</th>
+        <th>Delete</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.MessageId</td>
+            <td>@item.NameSurname</td>
+            <td>@item.Email</td>
+            <td>@item.Subject</td>
+            <td>@item.MessageDetail</td>
+            <td>@item.SendDate</td>
+            @if (item.IsRead == false)
+            {
+                <td><a class="btn btn-outline-warning" href="/Message/ChangeToTrue/@item.MessageId">Change to true</a></td>
+            }
+            else
+            {
+                <td><a class="btn btn-outline-primary" href="/Message/ChangeToFalse/@item.MessageId">Change to false</a></td>
+
+            }
+            <td><a href="/Message/DeleteMessage/@item.MessageId" class="btn btn-danger">Sil</a></td>
+        </tr>
+    }
+
+</table>
+
+@section Scripts {
+    <script src="~/sweetalert2/sweetalert2.all.min.js"></script>
+    <script src="~/sweetalert2/sweetalert2.esm.all.js"></script>
+    <script src="~/sweetalert2/sweetalert2.esm.all.min.js"></script>
+    <script src="~/sweetalert2/sweetalert2.esm.js"></script>
+    <script src="~/sweetalert2/sweetalert2.esm.min.js"></script>
+    <script src="~/sweetalert2/sweetalert2.js"></script>
+    <script src="~/sweetalert2/sweetalert2.min.js"></script>
+    <script>
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <text>
+                    Swal.fire({
+                        title: 'Success!',
+                            text: '@TempData["MessageSent"]?.ToString()',
+                        icon: 'success',
+                        confirmButtonText: 'Okey'
+                    });
+            </text>
+        }
+    </script>
+}

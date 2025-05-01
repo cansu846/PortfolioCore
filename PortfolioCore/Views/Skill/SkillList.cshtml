@@ -1,0 +1,40 @@
+﻿@using PortfolioCore.Entities
+@model List<Skill>
+@{
+    ViewData["Title"] = "SkillList";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<h1>Skill List</h1>
+
+<div class="card">
+	@* <div class="card-header">
+		<div class="card-title">Skill List</div>
+	</div> *@
+	<div class="card-body">
+		<table class="table table-striped mt-3">
+			<thead>
+				<tr>
+					<th scope="col">#</th>
+					<th scope="col">Skill</th>
+					<th scope="col">Value</th>
+					<th scope="col">Update</th>
+					<th scope="col">Delete</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var item in Model)
+				{
+					<tr>
+						<td>@item.SkillId</td>
+						<td>@item.SkillName</td>
+						<td>@item.SkillValue</td>
+						<td><a href="/Skill/UpdateSkill/@item.SkillId" class="btn btn-success" />Update</td>
+						<td><a href="/Skill/DeleteSkill/@item.SkillId" class="btn btn-danger" />Delete</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+		<a href="/Skill/CreateSkill" class="btn btn-primary">Create</a>
+	</div>
+</div>

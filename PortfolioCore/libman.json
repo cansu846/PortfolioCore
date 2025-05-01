@@ -1,0 +1,17 @@
+{
+  "version": "3.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "jquery@1.6.4",
+      "destination": "wwwroot/jquery/jquery/",
+      "files": [
+        "jquery.min.js"
+      ]
+    },
+    {
+      "library": "sweetalert2@11.16.1",
+      "destination": "wwwroot/sweetalert2/"
+    }
+  ]
+}

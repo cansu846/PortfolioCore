@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<div class="container">
+<h1 class="page-title mb-5 ">Dashboard</h1>
+<div class="alert alert-primary">Skills: @ViewBag.v1</div>
+<div class="alert alert-success">Sum Skill Value: @ViewBag.v2</div>
+<div class="alert alert-warning">Count Skills Over 70: @ViewBag.v3</div>
+<div class="alert alert-info">Average Skill Value: @ViewBag.v4</div>
+
+</div>

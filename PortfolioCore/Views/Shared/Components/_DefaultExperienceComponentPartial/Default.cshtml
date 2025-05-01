@@ -1,0 +1,14 @@
+﻿@model List<Experience>
+
+<div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+    <h3 class="resume-title">Experience</h3>
+
+    @foreach(var item in Model){ 
+        <h3 class="resume-title">@item?.Title</h3> <h5>@item?.ExperienceDate</h5>
+    <div class="resume-item">
+        <h4>@item?.SubTitle</h4>
+        <p>@item?.Description</p>
+    </div>
+    }
+
+</div>

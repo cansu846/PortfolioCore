@@ -1,0 +1,14 @@
+﻿
+
+<div id="map" style="height: 600px; width: 100%;"></div>
+<script>
+    var map = L.map('map').setView([41.015137, 28.979530], 13); // İstanbul koordinatları örnek
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    L.marker([41.015137, 28.979530]).addTo(map)
+        .bindPopup('İstanbul')
+        .openPopup();
+</script>

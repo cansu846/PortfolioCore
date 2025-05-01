@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\AdminLayout\PartialScript.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Views\AdminLayout\PartialScript.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\MyResume-1.0.0\.DS_Store" />
+    <None Include="wwwroot\MyResume-1.0.0\assets\.DS_Store" />
+    <None Include="wwwroot\sidebar-03\.DS_Store" />
+    <None Include="wwwroot\sidebar-03\css\.DS_Store" />
+    <None Include="wwwroot\sidebar-03\css\bootstrap\.DS_Store" />
+    <None Include="wwwroot\sidebar-03\css\bootstrap\mixins\.DS_Store" />
+    <None Include="wwwroot\sidebar-03\fonts\.DS_Store" />
+    <None Include="wwwroot\sidebar-03\images\.DS_Store" />
+    <None Include="wwwroot\sidebar-03\js\.DS_Store" />
+    <None Include="wwwroot\sidebar-03\scss\.DS_Store" />
+    <None Include="wwwroot\sidebar-03\scss\bootstrap\.DS_Store" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\" />
+    <Folder Include="Areas\" />
+    <Folder Include="Areas\wwww\Controllers\" />
+    <Folder Include="Areas\wwww\Data\" />
+    <Folder Include="Areas\wwww\Models\" />
+    <Folder Include="Areas\wwww\Views\" />
+    <Folder Include="wwwroot\assets\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="microsoft-web-helpers" Version="2.1.20710.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.36" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.36">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.36" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.36">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.18" />
+  </ItemGroup>
+
+</Project>
