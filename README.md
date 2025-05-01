@@ -1,41 +1,50 @@
-# PortfolioCore
+<h1 align="center">🧾 Personal CV Web Application</h1>
 
-🧾 Personal CV Web Application
-This is a Personal CV (Resume) Web Application developed using ASP.NET Core 6.0. It's a full-stack project that brings together backend and frontend technologies to present my skills and experience in an interactive and modern format.
+<p align="center">
+  <em>A modern, responsive CV website built with ASP.NET Core 6.0 and a full tech stack.</em>
+</p>
 
-🚀 Technologies Used
-ASP.NET Core 6.0 (Web API & MVC) – Application framework and backend logic
+---
 
-MSSQL – Relational database
+## 🚀 Technologies Used
 
-Entity Framework Core & LINQ – ORM and data access layer
+<ul>
+  <li><b>ASP.NET Core 6.0 (Web API & MVC)</b> – Application framework and backend logic</li>
+  <li><b>MSSQL</b> – Relational database</li>
+  <li><b>Entity Framework Core & LINQ</b> – ORM and data access layer</li>
+  <li><b>HTML, CSS, Bootstrap</b> – Frontend layout and styling</li>
+  <li><b>JavaScript</b> – Dynamic interactions and enhanced UX</li>
+</ul>
 
-HTML, CSS, Bootstrap – Frontend layout and styling
+---
 
-JavaScript – Dynamic interactions and enhanced user experience
+## 🎯 Project Purpose
 
-🎯 Project Purpose
-The goal of this project is to showcase my development skills and present my resume in a digital, user-friendly format. Instead of a static PDF, this interactive web CV provides a more engaging way to introduce myself professionally.
+This project is designed to <b>showcase my software development skills</b> and present my resume in a web-based, interactive format. Rather than a static PDF, this dynamic CV application delivers a richer and more engaging professional profile.
 
-🛠️ Features
-Sections for personal info, education, experience, and skills
+---
 
-Admin panel for easy content management (optional)
+## 📸 Screenshots
 
-Fully responsive design (mobile-friendly)
+<p><em>Screenshots of the UI will be added here.</em></p>
 
-CRUD operations for managing data
+---
 
-⚙️ Setup Instructions
-To run the project:
+## 🛠️ Features
 
-1. Clone the repository:
-```bash
-git clone https://github.com/your-username/cv-project.git
+- ✅ Sections for personal info, education, experience, and skills  
+- ✅ Responsive design (mobile-friendly)  
+- ✅ CRUD operations  
+- ✅ (Optional) Admin panel for easy updates  
 
-2. Open the project in Visual Studio and run the following command to apply migrations:
-```bash
-dotnet ef database update
+---
+
+## ⚙️ Setup Instructions
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/cv-project.git
+
 
 ![Screenshot 2025-05-01 230245](https://github.com/user-attachments/assets/a66f9b21-3845-4c97-ad7c-c19f8b764c3d)
 ![Screenshot 2025-05-01 230319](https://github.com/user-attachments/assets/3ec3a01e-3f2e-4fe2-bb0c-b7aae1a9c820)
