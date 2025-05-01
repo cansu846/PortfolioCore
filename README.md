@@ -1,4 +1,4 @@
-<h1 align="center">🧾 Personal CV Web Application</h1>
+<h1 align="center">🧾 Personal Portfolio Web Application</h1>
 
 <p align="center">
   <em>A modern, responsive CV website built with ASP.NET Core 6.0 and a full tech stack.</em>
