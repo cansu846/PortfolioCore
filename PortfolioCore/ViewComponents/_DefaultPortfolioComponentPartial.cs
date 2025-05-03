@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json.Linq;
 using PortfolioCore.Context;
 
 namespace PortfolioCore.ViewComponents
@@ -8,7 +9,8 @@ namespace PortfolioCore.ViewComponents
         PortfolioContext context = new PortfolioContext();
         public IViewComponentResult Invoke()
         {
-            return View();
+            var values = context.Categories.ToList();
+            return View(values);
         }
     }
 }

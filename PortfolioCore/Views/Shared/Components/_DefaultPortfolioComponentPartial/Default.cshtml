@@ -1,5 +1,7 @@
-﻿ <!-- Portfolio Section -->
-<section id="portfolio" class="portfolio section">
+﻿   @model List<Category>
+
+
+   <section id="portfolio" class="portfolio section">
 
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
@@ -9,13 +11,50 @@
     <div class="container">
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          
+         
+            <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
 
-            @await Component.InvokeAsync("_DefaultCategoryComponentPartial")
-            @await Component.InvokeAsync("_DefaultPortfolioItemComponentPartial")
+                <li data-category="all" class="filter-active">All</li>
+
+                @foreach (var item in Model)
+                {
+                    <li data-category="@item.CategoryName.ToLower()">@item.CategoryName</li>
+                }
+            </ul>
+
+
+            <div id="portfolio-container">
+                @await Component.InvokeAsync("_DefaultPortfolioItemComponentPartial", new List<Portfolio>())
+
+            </div>
 
         </div>
 
     </div>
 
-</section><!-- /Portfolio Section -->
+</section>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(document).ready(function () {
+        $(document).on("click", ".portfolio-filters li", function () {
+            var category = $(this).data("category");
+                // console.log(category);
+            $.ajax({
+                url: "/PortfolioAjax/GetPortfolioByCategory?category=" + category,
+                type: "GET",
+                success: function (result) {
+                    // console.log(result);
+                    $("#portfolio-container").html(result);
+                }
+            });
+
+            // $(".portfolio-filters li").removeClass("filter-active");
+            // $(this).addClass("filter-active");
+        });
+    });
+</script>
+
 
