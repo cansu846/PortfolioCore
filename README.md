@@ -61,7 +61,7 @@ This project is designed to <b>showcase my software development skills</b> and p
 ![Screenshot 2025-05-01 230344](https://github.com/user-attachments/assets/95214917-959b-4dca-87fa-a4fd4f900c63)
 ![Screenshot 2025-05-01 230400](https://github.com/user-attachments/assets/04d5fca3-d9ed-4fc1-8b2a-33e3cb8e3b61)
 ![Screenshot 2025-05-01 230420](https://github.com/user-attachments/assets/ca2813cf-7dec-4b9e-888c-9360fac8fd77)
-![Screenshot 2025-05-03 113507](https://github.com/user-attachments/assets/64e7ce45-254f-4efa-add9-473230f6a883)
+![Screenshot 2025-05-03 114323](https://github.com/user-attachments/assets/b3486b3e-007e-4049-a19d-658a8cb92204)
 ![Screenshot 2025-05-03 113519](https://github.com/user-attachments/assets/47ef84f8-3fbb-4f3a-ac53-396ca491420f)
 ![Screenshot 2025-05-01 230525](https://github.com/user-attachments/assets/60cb84af-2d4e-4dda-ac3a-8f84b83d41e6)
 ![Screenshot 2025-05-01 230624](https://github.com/user-attachments/assets/5e2ffbc0-b3a3-440b-b2b1-78a474e457c5)
